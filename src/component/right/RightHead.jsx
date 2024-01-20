@@ -8,9 +8,9 @@ export default function RightHead() {
   const {handelmenu} =useContext(Data)
   const handelDisplay=(arg)=>{
     if(arg === 'phone'){
-      alert('Changed Your Display Screen to Mobile');
+      alert('Changed Your Display Screen to Mobile It is fully responsive');
     }else{
-      alert('Changed Your Display Screen to Destop');
+      alert('Changed Your Display Screen to Destop It is fully responsive');
     }
   }
   return (
