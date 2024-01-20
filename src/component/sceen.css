@@ -609,7 +609,7 @@ body {
         width: 100%;
         /* background-color: #0073E6; */
         display: grid;
-        grid-template-columns: 170px 185px;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(3, 130px);
         padding: 0;
         overflow: hidden;
