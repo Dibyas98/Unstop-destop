@@ -6,6 +6,13 @@ import { Data } from '../Store';
 
 export default function RightHead() {
   const {handelmenu} =useContext(Data)
+  const handelDisplay=(arg)=>{
+    if(arg === 'phone'){
+      alert('Changed Your Display Screen to Mobile');
+    }else{
+      alert('Changed Your Display Screen to Destop');
+    }
+  }
   return (
     <div className="head">
     <div>
@@ -16,8 +23,8 @@ export default function RightHead() {
         <h4>My Assessments <span className='mobile-head'>Unstop Assessment</span></h4>
        
         <div >
-            <Smartphone className="smartphone"></Smartphone>
-            <Monitor className='destop'/>
+            <Smartphone className="smartphone" onClick={()=>(handelDisplay('phone'))}></Smartphone>
+            <Monitor className='destop' onClick={()=>{handelDisplay()}}/>
         </div>
     </div>
 </div>
