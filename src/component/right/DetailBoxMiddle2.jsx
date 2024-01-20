@@ -11,7 +11,7 @@ export default function DetailBoxMiddle2() {
                             <li className="bord">
                                 <h2>11,000 <span>+89</span></h2>
                             </li>
-                            <li>Email</li>
+                            <li className='bord'>Email</li>
                         </ul>
                         <ul>
                             <li className="bord">

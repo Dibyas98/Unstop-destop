@@ -106,10 +106,7 @@ body {
     align-items:normal;
     padding: 0 1rem;
 }
-.mobileiver{
-    flex-direction: row;
-    gap: 1rem;
-}
+
 .menu{
     font-size: 1rem;
     font-weight: 600;
@@ -238,6 +235,9 @@ body {
 }
 .destop{
     display: none;
+    position: relative;
+    top: -65px;
+    left: 85%;
 }
 .rect-icon>ul {
     list-style: none;
@@ -549,7 +549,11 @@ body {
     display: none;
 }
 
-
+@media screen and (max-width:1280px) {
+    .left-cont {
+        width: 20%;
+    }
+}
 
 @media screen and (max-width:430px) {
     .cont {
@@ -745,5 +749,15 @@ body {
     } 
     .menubar{
         display: block;
-    }  
+    } 
+    .borhide{
+        border: none;
+    } 
+    .destop{
+        display: block;
+    }
+    .mobileiver{
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
