@@ -1,6 +1,6 @@
 import React from 'react';
 import bag from './Assects/bag.jpg';
-import sha from './Assects/sha.png';
+import sha from './Assects/sha.jpg';
 import cal from './Assects/calendar-days.png'
 const assessmentData = [
     {
