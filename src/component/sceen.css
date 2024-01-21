@@ -345,13 +345,18 @@ body {
     gap: 1rem;
 }
 
-.added-con>h4 {
+.added-con h4 {
     font-weight: 600;
 }
 
-.added-con>img {
+.added-con img {
     width: 50px;
     height: 50px;
+}
+.added-cont{
+    gap: 1rem;
+    display: flex ;
+    flex-direction: column;
 }
 
 .ad {
@@ -359,7 +364,7 @@ body {
     gap: 0.5rem;
 }
 
-.ad>div>img {
+.ad img {
     width: 20px;
     height: 20px;
     font-size: 0.5rem;
@@ -523,6 +528,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: block;
+    z-index: 1000;
     /* */
 
 }
@@ -548,6 +554,12 @@ body {
 .hide-des{
     display: none;
 }
+.mob-ass{
+    display: none;
+    /* display: flex; */
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
 @media screen and (max-width:1280px) {
     .left-cont {
@@ -567,6 +579,12 @@ body {
     .right-cont {
         width: 100%;
 
+    }
+    .head{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: white;
     }
 
     .head>div {
@@ -759,5 +777,17 @@ body {
     .mobileiver{
         flex-direction: row;
         gap: 1rem;
+    }
+    .added-cont{
+        flex-direction: row;
+    }
+    .added-con{
+        height: auto;
+    }
+    .mob-ass{
+        display: flex;
+    }
+    .right-cont{
+        height: auto;
     }
 }
