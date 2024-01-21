@@ -21,7 +21,7 @@ export default function AssesmentList() {
                 <div className="ad">
                     <h5>{assessmentData[0].type}</h5>
                     <img src={cal} alt="" />
-                    <p>20 Apr 200</p>
+                    <p>20 Apr 2000</p>
                 </div>
                 </div>
             </div>

@@ -566,6 +566,31 @@ body {
         width: 20%;
     }
 }
+@media screen and (max-width:800px) and (min-width:768px) {
+    .added{
+        width:100%;
+    }
+    .all-assess{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        
+    }
+    .add-end {
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 884px) and (min-width:801px){
+    .added{
+        width:46%;
+        gap: 1rem;
+    }
+    .all-assess{
+        flex-direction: row;
+    }
+}
 
 @media screen and (max-width:430px) {
     .cont {
