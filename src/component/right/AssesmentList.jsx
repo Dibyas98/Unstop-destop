@@ -18,14 +18,14 @@ export default function AssesmentList() {
                 <img src={bag} alt="" />
                 <div className='ad-up'>
                 <h4>{assessmentData[0].assessmentName}</h4>
-                <div class="ad">
+                <div className="ad">
                     <h5>{assessmentData[0].type}</h5>
                     <img src={cal} alt="" />
                     <p>20 Apr 200</p>
                 </div>
                 </div>
             </div>
-            <div class="add-end">
+            <div className="add-end">
                 <p>{assessmentData[0].duration} Durations</p>
                 <p>{assessmentData[0].qiestions} Questons</p>
                 <div>
