@@ -21,7 +21,7 @@ export default function AddAssesment({ dia }) {
       </div>
       <AssesmentList></AssesmentList>
       <AssesmentList></AssesmentList>
-      <div className="mob-ass">
+      <div className="mob-ass" style={{width:'100%'}}>
       <AssesmentList ></AssesmentList>
       <AssesmentList ></AssesmentList>
       <AssesmentList ></AssesmentList>
