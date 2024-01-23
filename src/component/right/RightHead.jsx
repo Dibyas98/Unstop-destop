@@ -3,14 +3,18 @@ import { Smartphone } from 'lucide-react';
 import { Monitor } from 'lucide-react';
 import { Menu } from 'lucide-react';
 import { Data } from '../Store';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function RightHead() {
   const {handelmenu} =useContext(Data)
   const handelDisplay=(arg)=>{
     if(arg === 'phone'){
-      alert('Changed Your Display Screen to Mobile It is fully responsive');
+       toast.warning("Changed Your Display Screen to Mobile It is fully responsive");
+      // alert('Changed Your Display Screen to Mobile It is fully responsive');
     }else{
-      alert('Changed Your Display Screen to Destop It is fully responsive');
+      toast.warning("Changed Your Display Screen to Destop It is fully responsive");
+      // alert('Changed Your Display Screen to Destop It is fully responsive');
     }
   }
   return (
@@ -25,6 +29,7 @@ export default function RightHead() {
         <div >
             <Smartphone className="smartphone" onClick={()=>(handelDisplay('phone'))}></Smartphone>
             <Monitor className='destop' onClick={()=>{handelDisplay()}}/>
+            <ToastContainer />
         </div>
     </div>
 </div>

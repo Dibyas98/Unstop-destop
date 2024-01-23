@@ -8,35 +8,39 @@ import { Filter } from 'lucide-react';
 import { BarChart2 } from 'lucide-react';
 
 export default function RightHero() {
-  const[detail,setdetail]=useState(false)
-  const handelDetail=()=>{
+  const [detail, setdetail] = useState(false)
+  const handelDetail = () => {
     setdetail(!detail);
   }
-const set = {
-  backgroundColor:'#F2F8FE',
-  borderRadius:'50%',
-  border:'1px solid #0073E6',
-  fontWeight:'600',
-  fontSize:'2rem'
-  
+  const set = {
+    backgroundColor: '#F2F8FE',
+    borderRadius: '50%',
+    border: '1px solid #0073E6',
+    fontWeight: '600',
+    fontSize: '2rem'
 
-}
+
+  }
   return (
     <section className="hero-sec">
       <div className='head-option'>
         <h3><span className='overview'>Assessment Overview</span> <span className='assesment'>My Assessment</span></h3>
-        <div style={{height:'60px'}} className=''>
+        <div style={{ height: '60px' }} className=''>
           <Search className='lucid-icon'></Search>
           <Filter className='lucid-icon'></Filter>
-          <BarChart2 className='lucid-icon' onClick={handelDetail} style={detail?set:null} ></BarChart2>
+          <BarChart2 className='lucid-icon' onClick={handelDetail} style={detail ? set : null} ></BarChart2>
         </div>
+      </div>
+      {detail ? <div className={`detail-out`}>
+        <div className="details">
+          <DetailBoxLeft></DetailBoxLeft>
+          <DetailBoxMiddle1></DetailBoxMiddle1>
+          <DetailBoxMiddle2></DetailBoxMiddle2>
+          <DetailBoxRight></DetailBoxRight>
         </div>
-      {detail?<div className="details">
-        <DetailBoxLeft></DetailBoxLeft>
-        <DetailBoxMiddle1></DetailBoxMiddle1>
-        <DetailBoxMiddle2></DetailBoxMiddle2>
-        <DetailBoxRight></DetailBoxRight>
-      </div>:null}
+      </div> : <div className={`detail-clos`}>
+        
+      </div>}
     </section>
   )
 }
