@@ -2,13 +2,15 @@ import React from "react";
 import plus from "./Assects/plus1.png";
 import AssesmentList from "./AssesmentList";
 export default function AddAssesment({ dia }) {
+  // ADD ASSESSMENT COMPONENT 
   return (
     <div className="all-assess">
+      {/* ONCLICK LISTNER IS ADD TO DISPLAY DIALOG COMPONENT WHEN CLICKED  */}
       <div className="add-assess added">
         <div
           className="plus"
           onClick={() => {
-            dia("hii");
+            dia();
           }}
         >
           <img src={plus} alt="" />
@@ -19,26 +21,26 @@ export default function AddAssesment({ dia }) {
           subjective (text or paragraph)!
         </p>
       </div>
+
+      {/* TO DISPLAY ASSESSMENT LIST IN DESTOP  */}
       <AssesmentList></AssesmentList>
       <AssesmentList></AssesmentList>
-      <div className="mob-ass" style={{width:'100%'}}>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
-      <AssesmentList ></AssesmentList>
+      {/* TO DISPALY ASSESSMENTLIST IN MOBILE  */}
+      <div className="mob-ass" style={{ width: "100%" }}>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
+        <AssesmentList></AssesmentList>
       </div>
-      
-
-
     </div>
   );
 }

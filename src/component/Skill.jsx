@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Skill({name}) {
+  // SKILL COMPONENT USED IS FORM TO DISPLAY CLICK WITH TAKING PROPS AS NAME TO SHOW THE SKILL 
   return (
     <div className="skill">
     <p>{name}</p>

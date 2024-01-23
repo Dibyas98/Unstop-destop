@@ -2,6 +2,7 @@ import React from "react";
 import { LayoutDashboard, SquarePen, BookCopy } from "lucide-react";
 
 export default function Lefticons() {
+  // LEFT ICON COMPONENT 
   return (
     <div className="dash-cont mobile-dash">
       <div className="set-icon mobileiver">

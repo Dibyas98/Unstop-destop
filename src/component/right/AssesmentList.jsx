@@ -2,6 +2,9 @@ import React from 'react';
 import bag from './Assects/bag.jpg';
 import sha from './Assects/sha.jpg';
 import cal from './Assects/calendar-days.png'
+
+
+// ASSESSMENT DATA 
 const assessmentData = [
     {
         assessmentName: 'Math Assessment',
@@ -12,6 +15,7 @@ const assessmentData = [
     }
 ]
 export default function AssesmentList() {
+    // ASSESSMENT DETAIL COMPNENT 
     return (
         <div className='added added-con'>
             <div className='added-cont' style={{border:'none'}}>

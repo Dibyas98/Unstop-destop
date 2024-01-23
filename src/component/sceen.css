@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;800;900&display=swap');
 
+
+/* CSS FILE FOR UNSTOP ASSESSMENT  */
 :root {
     --text-color: #0073E6;
 }
@@ -564,12 +566,30 @@ body {
     gap: 2rem;
 }
 
+
+/* MEDIA QUERY FOR DISPLAY WIDTH LESS THAN 1280PX  */
+
 @media screen and (max-width:1280px) {
     .left-cont {
         width: 20%;
     }
 }
-@media screen and (max-width:800px) and (min-width:768px) {
+
+
+/* MEDIA QUERY FOR DISPLAY WIDTH LESS THAN 884PX AND MORE THAN 801PX  */
+
+@media only screen and (max-width: 884px) and (min-width:801px){
+    .added{
+        width:46%;
+        gap: 1rem;
+    }
+    .all-assess{
+        flex-direction: row;
+    }
+}
+
+/* MEDIA QUERY FOR DISPLAY WIDTH LESS THAN 800PX  */
+@media screen and (max-width:800px)  {
     .added{
         width:100%;
     }
@@ -585,16 +605,9 @@ body {
         justify-content: space-between;
     }
 }
-@media only screen and (max-width: 884px) and (min-width:801px){
-    .added{
-        width:46%;
-        gap: 1rem;
-    }
-    .all-assess{
-        flex-direction: row;
-    }
-}
 
+
+/* MEDIA QUERY FOR DISPLAY WIDTH LESS THAN 430PX */
 @media screen and (max-width:430px) {
     .cont {
         padding: 0;

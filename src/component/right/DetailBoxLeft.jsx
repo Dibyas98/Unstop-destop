@@ -2,6 +2,7 @@ import React from "react";
 import rectBox from './Assects/rect-box.png'
 
 export default function DetailBoxLeft() {
+  // DETAIL BOX LEFT SIDE 
   return (
     <div className="detail-box box-left">
       <h4>Total Assessment</h4>

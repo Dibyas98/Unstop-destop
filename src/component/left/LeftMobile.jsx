@@ -6,6 +6,7 @@ import { Data } from '../Store';
 
 
 export default function LeftMobile() {
+  // USECONTEXT FOR HANDEL MEMU DISPLAY FOR MOBILE WHEN CLICKED 
     const {handelmenu,menu} = useContext(Data)
   return (
     <>
