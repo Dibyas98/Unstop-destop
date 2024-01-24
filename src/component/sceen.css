@@ -332,6 +332,7 @@ body {
     text-align: center;
     font-size: 0.8rem;
     font-weight: 500;
+    width: 100%;
 }
 
 .added {
@@ -341,6 +342,7 @@ body {
     height: 220px;
     border-radius: 10px;
 }
+
 
 
 .added-con {
@@ -677,6 +679,9 @@ body {
         overflow: hidden;
 
     }
+    .detail-destop{
+        display: none;
+    }
     .detail-out{
         overflow: hidden;
         animation: de 0.7s ease-in ;
@@ -794,6 +799,7 @@ body {
     }
 
     .all-assess {
+        display: flex;
         width: 100%;
     }
 

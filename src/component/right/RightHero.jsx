@@ -42,6 +42,13 @@ export default function RightHero() {
           ></BarChart2>
         </div>
       </div>
+
+      <div className="details detail-destop">
+            <DetailBoxLeft></DetailBoxLeft>
+            <DetailBoxMiddle1></DetailBoxMiddle1>
+            <DetailBoxMiddle2></DetailBoxMiddle2>
+            <DetailBoxRight></DetailBoxRight>
+          </div>
       {/* DISPLAY DETAIL HEN CLICK ON BARCHART2 COMPONENT  */}
       {detail ? (
         <div className={`detail-out`}>
